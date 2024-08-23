@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "717248014518",
+    "project_id": "aravind-eye-3845e",
+    "storage_bucket": "aravind-eye-3845e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717248014518:android:f8c9f79f5b4424450e5e17",
+        "android_client_info": {
+          "package_name": "com.example.dhrishti_page"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl1GP2XnlD0s2hjlu5Gsgn_6-4hj8YB2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
