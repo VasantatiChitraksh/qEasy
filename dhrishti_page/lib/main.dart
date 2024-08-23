@@ -1,6 +1,8 @@
+import 'package:dhrishti_page/PatientLoginPage.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
   runApp(MyApp());
 }
 
@@ -9,9 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: HomePage(),
+      initialRoute: '/patientLogin',
       routes: {
         '/doctorLogin': (context) => DoctorLoginPage(),
-        '/patientLogin': (context) => PatientLoginPage(),
+        '/patientLogin': (context) => LoginPage(),
       },
     );
   }

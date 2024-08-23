@@ -1,19 +1,41 @@
+import 'package:dhrishti_page/common_methods.dart';
+import 'package:dhrishti_page/dataClass.dart';
+import 'package:dhrishti_page/loading_box.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => LoginPageState();
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: LoginPage(),
+class LoginPageState extends State<LoginPage> {
+  TextEditingController email_controller = TextEditingController();
+  TextEditingController password_controller = TextEditingController();
+  CommonMethods cMeethods = CommonMethods();
+  DataClass data = DataClass();
+  LoginValidation() {
+    if (!email_controller.text.contains("@")) {
+      cMeethods.displaysnackBar("Please write valid email", context);
+    } else if (password_controller.text.trim().length < 6) {
+      cMeethods.displaysnackBar(
+          "Password Must be 6 or more characters", context);
+    } else {
+      loginuser();
+    }
+  }
+
+  loginuser() async {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) =>
+          LoadingDialog(massagetext: "logging in your Account. . ."),
     );
   }
-}
 
-class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,5 +119,11 @@ class LoginPage extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
   }
 }
