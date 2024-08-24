@@ -1,17 +1,23 @@
+import 'package:dhrishti_page/output._patient.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Location extends StatefulWidget {
+  get type => null;
+
   @override
   LocationScreenState createState() => LocationScreenState();
 }
 
 class LocationScreenState extends State<Location> {
   String? selectedlocation;
+  TextEditingController name_controller = TextEditingController();
   String? selectedType;
+  static int type = 0;
 
   // Sample data for dropdowns
   List<String> location = ['Tirupati', 'Madurai', 'Salem'];
-  List<String>  Type = ['Main', 'Community'];
+  List<String> Type = ['Main', 'Community'];
 
   @override
   Widget build(BuildContext context) {
@@ -82,16 +88,38 @@ class LocationScreenState extends State<Location> {
               onChanged: (value) {
                 setState(() {
                   selectedType = value;
+                  if (value == 'Main') {
+                    type = 0;
+                  } else {
+                    type = 1;
+                  }
                 });
               },
+            ),
+            SizedBox(height: 40),
+
+            SizedBox(height: 20),
+            TextField(
+              controller: name_controller,
+              decoration: InputDecoration(
+                labelText: 'Patient Name:',
+                labelStyle: TextStyle(color: Colors.white),
+                filled: true,
+                fillColor: Color(0xFF1224A5),
+                border: InputBorder.none,
+              ),
             ),
             SizedBox(height: 40),
 
             // Next Button
             ElevatedButton(
               onPressed: () {
-                if(selectedlocation != null && selectedType !=null){
-                Navigator.pushNamed(context, '/patient');
+                if (selectedlocation != null && selectedType != null) {
+                  Navigator.pushNamed(
+                    context,
+                    '/patient',
+                    arguments: name_controller.text,
+                  );
                 }
               },
               style: ElevatedButton.styleFrom(

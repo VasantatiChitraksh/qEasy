@@ -35,8 +35,10 @@ class MyApp extends StatelessWidget {
         '/location': (context) => Location(),
         '/Doclocation': (context) => DocLocation(),
         '/register': (context) => Registrations(),
-        '/patient': (context) => OutputPatient(),
-        '/doctor': (context) => OutputDoctor(),
+        '/patient': (context) => OutputPatient(
+              patientName: '',
+            ),
+        '/doctor': (context) => PatientDropdown(),
         '/addPatient': (context) => AddPatient(),
       },
     );
