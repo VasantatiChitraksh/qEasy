@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "346946868875",
-    "project_id": "aravindaeih",
-    "storage_bucket": "aravindaeih.appspot.com"
+    "project_number": "148790667634",
+    "project_id": "aravind-aeih",
+    "storage_bucket": "aravind-aeih.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:346946868875:android:3be04001fb1304a335668e",
+        "mobilesdk_app_id": "1:148790667634:android:72790cdce77b78417ed5eb",
         "android_client_info": {
           "package_name": "com.example.dhrishti_page"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC93qfHJdtDxhiw-1yOPnKSOLCkO71RvuY"
+          "current_key": "AIzaSyC9_dPw0QcQ_CsUwJupqH-9zHZWHHqRv6U"
         }
       ],
       "services": {

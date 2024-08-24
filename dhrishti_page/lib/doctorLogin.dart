@@ -4,14 +4,14 @@ import 'package:dhrishti_page/loading_box.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class DoctorLogin extends StatefulWidget {
+  const DoctorLogin({super.key});
 
   @override
-  State<LoginPage> createState() => LoginPageState();
+  State<DoctorLogin> createState() => LoginPageState();
 }
 
-class LoginPageState extends State<LoginPage> {
+class LoginPageState extends State<DoctorLogin> {
   TextEditingController email_controller = TextEditingController();
   TextEditingController password_controller = TextEditingController();
   CommonMethods cMeethods = CommonMethods();
@@ -114,8 +114,8 @@ class LoginPageState extends State<LoginPage> {
               DataClass.addUsername(email_controller.text);
               if (DataClass.password == password_controller.text &&
                   password_controller.text.length != 0 &&
-                  DataClass.role == 0) {
-                Navigator.pushNamed(context, '/location');
+                  DataClass.role == 1) {
+                Navigator.pushNamed(context, '/Doclocation');
               } else {
                 print("Nope");
               }

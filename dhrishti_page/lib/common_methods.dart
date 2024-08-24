@@ -6,3 +6,5 @@ class CommonMethods {
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 }
+
+

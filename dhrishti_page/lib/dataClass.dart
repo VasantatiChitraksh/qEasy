@@ -13,7 +13,7 @@ class DataClass {
     QuerySnapshot querySnapshot = await passwords.get();
     for (var doc in querySnapshot.docs) {
       if (doc['username'] == username) {
-        password = doc['name'];
+        password = doc['password'];
         access = true;
         role = doc['role'];
       }

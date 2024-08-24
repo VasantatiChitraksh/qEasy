@@ -41,48 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBgOzqb6mwfXescCGDPlVhidecFZPtW2BI',
-    appId: '1:346946868875:web:a1bd0e0c474d00a535668e',
-    messagingSenderId: '346946868875',
-    projectId: 'aravindaeih',
-    authDomain: 'aravindaeih.firebaseapp.com',
-    storageBucket: 'aravindaeih.appspot.com',
-    measurementId: 'G-D6DJ0TS25S',
+    apiKey: 'AIzaSyDnujIsGECIbiWAygMds-USaNvFEnfEa3U',
+    appId: '1:148790667634:web:a83a9f337998a9287ed5eb',
+    messagingSenderId: '148790667634',
+    projectId: 'aravind-aeih',
+    authDomain: 'aravind-aeih.firebaseapp.com',
+    storageBucket: 'aravind-aeih.appspot.com',
+    measurementId: 'G-4503Q1ML5P',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC93qfHJdtDxhiw-1yOPnKSOLCkO71RvuY',
-    appId: '1:346946868875:android:3be04001fb1304a335668e',
-    messagingSenderId: '346946868875',
-    projectId: 'aravindaeih',
-    storageBucket: 'aravindaeih.appspot.com',
+    apiKey: 'AIzaSyC9_dPw0QcQ_CsUwJupqH-9zHZWHHqRv6U',
+    appId: '1:148790667634:android:72790cdce77b78417ed5eb',
+    messagingSenderId: '148790667634',
+    projectId: 'aravind-aeih',
+    storageBucket: 'aravind-aeih.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCEJXJlteJvpYOtKSjQIMnH1XGNSlysu8E',
-    appId: '1:346946868875:ios:5d77550d524b60d835668e',
-    messagingSenderId: '346946868875',
-    projectId: 'aravindaeih',
-    storageBucket: 'aravindaeih.appspot.com',
+    apiKey: 'AIzaSyDYE0c7scDKdUjfuvPb81Zxr224aJT759g',
+    appId: '1:148790667634:ios:5a59d8b0ea4ee4c47ed5eb',
+    messagingSenderId: '148790667634',
+    projectId: 'aravind-aeih',
+    storageBucket: 'aravind-aeih.appspot.com',
     iosBundleId: 'com.example.dhrishtiPage',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCEJXJlteJvpYOtKSjQIMnH1XGNSlysu8E',
-    appId: '1:346946868875:ios:5d77550d524b60d835668e',
-    messagingSenderId: '346946868875',
-    projectId: 'aravindaeih',
-    storageBucket: 'aravindaeih.appspot.com',
+    apiKey: 'AIzaSyDYE0c7scDKdUjfuvPb81Zxr224aJT759g',
+    appId: '1:148790667634:ios:5a59d8b0ea4ee4c47ed5eb',
+    messagingSenderId: '148790667634',
+    projectId: 'aravind-aeih',
+    storageBucket: 'aravind-aeih.appspot.com',
     iosBundleId: 'com.example.dhrishtiPage',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBgOzqb6mwfXescCGDPlVhidecFZPtW2BI',
-    appId: '1:346946868875:web:7cd867d91bff10eb35668e',
-    messagingSenderId: '346946868875',
-    projectId: 'aravindaeih',
-    authDomain: 'aravindaeih.firebaseapp.com',
-    storageBucket: 'aravindaeih.appspot.com',
-    measurementId: 'G-M9P1PHSC5Z',
+    apiKey: 'AIzaSyDnujIsGECIbiWAygMds-USaNvFEnfEa3U',
+    appId: '1:148790667634:web:508ac9b478c4fa897ed5eb',
+    messagingSenderId: '148790667634',
+    projectId: 'aravind-aeih',
+    authDomain: 'aravind-aeih.firebaseapp.com',
+    storageBucket: 'aravind-aeih.appspot.com',
+    measurementId: 'G-F96441KDZQ',
   );
 }
