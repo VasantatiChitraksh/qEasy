@@ -1,9 +1,20 @@
 import 'package:dhrishti_page/PatientLoginPage.dart';
+import 'package:dhrishti_page/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
+<<<<<<< HEAD
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform);
+  } finally {
+    runApp(MyApp());
+  }
+=======
   runApp(MyApp());
+>>>>>>> parent of 1f0c39e (Update)
 }
 
 class MyApp extends StatelessWidget {
